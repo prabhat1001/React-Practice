@@ -9,8 +9,10 @@ const UseStateHook = () => {
     const [flag, setFlag] = useState(true); // used for boolean
 
     //lets used it for numbers
-
     const [steps, setSteps] = useState(0); // used for numbers
+
+    //lets used it for array
+    const [names, setNames] = useState([]); // used for array ( initialized with empty array )
     
 
     function changeName() {
@@ -41,6 +43,8 @@ const UseStateHook = () => {
         return setSteps;    
     }
 
+
+
   return (
     <>
 
@@ -64,6 +68,7 @@ const UseStateHook = () => {
     </div>
 
     <hr></hr>
+
     </>
   )
 }
